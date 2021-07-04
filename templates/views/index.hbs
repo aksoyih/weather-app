@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+    <div class="container-fluid ml-2">
+    {{>navbar}}
+    </div>
+
+    <div class="container-fluid ml-2">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <h3>Weather App</h3>
+                <p>
+                    This app is to get current weather data from API services.
+                </p>
+            </div>
+
+            <div class="col-5">
+                <form>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control" id="location" placeholder="Enter a place">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3" id="searchButton">Search</button>
+                </form>
+
+                <p class="mt-2" id="forecastData">
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>
